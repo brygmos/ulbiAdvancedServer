@@ -1,5 +1,13 @@
 export class CreateArticleDto {
   readonly title: string;
+  readonly subtitle: string;
   readonly views: number;
-  // Add other properties as needed
+  readonly img: string;
+  readonly userId: number;
+  // readonly blocks: ArticleBlock[];
+  // readonly types: Type[];
+  // readonly comments: Comment[];
+  // readonly user: null;
+  // readonly createdAt: null;
+  // readonly updatedAt: null;
 }
