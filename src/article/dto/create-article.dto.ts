@@ -1,13 +1,19 @@
 export class CreateArticleDto {
   readonly title: string;
   readonly subtitle: string;
-  readonly views: number;
   readonly img: string;
+  readonly views: 0;
   readonly userId: number;
-  // readonly blocks: ArticleBlock[];
+  readonly types?: {
+    type: string;
+  };
   // readonly types: Type[];
+  // readonly blocks: ArticleBlock[];
   // readonly comments: Comment[];
-  // readonly user: null;
-  // readonly createdAt: null;
-  // readonly updatedAt: null;
 }
+
+type Type = {
+  id: number;
+  name: string;
+  type: object;
+};
